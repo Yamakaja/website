@@ -1,0 +1,17 @@
+<h1>All Titles</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Artist</th>
+        <th>Duration</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="x in songs">
+        <td>{{x.name}}</td>
+        <td>{{x.artist}}</td>
+        <td>{{x.duration}}</td>
+    </tr>
+    </tbody>
+</table>

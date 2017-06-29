@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yamakaja Tech - Music Library</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="/css/all.css" rel="stylesheet">
+    <link href="/css/music.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/img/favicon.png" sizes="128x128">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route-segment/1.4.0/angular-route-segment.min.js"></script>
+
+    <base href="/music/">
+</head>
+<body ng-app="musicLib">
+
+<nav class="navbar navbar-expand-md navbar-inverse fixed-top bg-inverse">
+    <a class="navbar-brand" href="#">Yamakaja Tech</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://irc.vps.pub.yamakaja.me/">IRC Client</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link disabled" href="#">Music Library</a>
+            </li>
+        </ul>
+        <a class="nav-link" id="nav-account" href="#/preferences">
+            <img src="https://www.gravatar.com/avatar/28216c3971c43acbab002530e383049f?s=39" alt="Yamakaja">
+            <span>Yamakaja</span>
+        </a>
+    </div>
+</nav>
+
+<div app-view-segment="0" id="content-container"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/js/music.js"></script>
+</body>
+</html>
